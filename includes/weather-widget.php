@@ -39,7 +39,7 @@ class Weather_Widget extends WP_Widget
             $longitude = get_post_meta($city_id, '_city_longitude', true);
 
             // Fetch weather data from OpenWeatherMap API
-            $api_key = '8e97a120fb97ceebea57e422f34721ea';
+            $api_key = 'api-key';
             $api_url = "http://api.openweathermap.org/data/2.5/weather?lat={$latitude}&lon={$longitude}&units=metric&appid={$api_key}";
 
             $response = wp_remote_get($api_url);

@@ -82,7 +82,7 @@ function display_weather_table() {
 }
 
 function get_city_temperature($latitude, $longitude) {
-    $api_key = '4bac9eb0f521ebc2d2bd2073cd0206aa';
+    $api_key = 'api-key';
     $api_url = "http://api.openweathermap.org/data/2.5/weather?lat={$latitude}&lon={$longitude}&units=metric&appid={$api_key}";
 
 
